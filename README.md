@@ -16,7 +16,9 @@
 
 
 
-# Azure Data Engineering Project
+
+
+
 
 ## Overview
 This project demonstrates an end-to-end data pipeline built using Azure services. The pipeline automates data ingestion, transformation, storage, and monitoring.
