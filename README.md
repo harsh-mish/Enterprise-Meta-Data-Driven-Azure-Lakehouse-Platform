@@ -41,12 +41,20 @@ Overall, this setup follows industry-standard CI/CD practices, improving reliabi
 
 
 
+
+
 ## Workflow
 
 1. Data is ingested from source systems using Azure Data Factory pipelines.
 2. The ingested data is processed and transformed using Azure Databricks notebooks.
 3. Transformed data is stored in Azure Synapse Analytics for reporting and analysis.
 4. Azure Logic Apps is used to trigger alerts/notifications based on pipeline execution status.
+
+
+
+
+<img width="1000" height="500" alt="Workflows" src="https://github.com/user-attachments/assets/d21cc06f-b4c6-49ec-9146-a049a2a943d9" />
+
 
 
 
