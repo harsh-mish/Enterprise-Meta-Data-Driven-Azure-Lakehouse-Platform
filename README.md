@@ -1,6 +1,6 @@
 # Azure Data Engineering Project
 
-<img width="4000" height="2000" alt="Architecture" src="https://github.com/user-attachments/assets/3d614eb9-eebf-4594-af8e-8b194477107f" />
+<img width="500" height="500" alt="Architecture" src="https://github.com/user-attachments/assets/3d614eb9-eebf-4594-af8e-8b194477107f" />
 
 
 
@@ -36,7 +36,7 @@ Overall, this setup follows industry-standard CI/CD practices, improving reliabi
 
 
 
-<img width="1536" height="1024" alt="gir_intigration" src="https://github.com/user-attachments/assets/cb756a84-c95a-44cc-bb11-553ddf0ec81f" />
+<img width="500" height="500" alt="gir_intigration" src="https://github.com/user-attachments/assets/cb756a84-c95a-44cc-bb11-553ddf0ec81f" />
 
 
 
