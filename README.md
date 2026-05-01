@@ -193,6 +193,31 @@ This pipeline is designed to perform incremental data loading using CDC (Change 
 
 
 
+## Future Enhancements
+
+- Implement CI/CD pipeline using Azure DevOps
+- Add data quality checks
+- Integrate Power BI dashboard
+- Optimize pipeline performance
+
+
+
+
+
+
+## How to Run
+
+1. Create Azure resources (ADF, Databricks, Synapse)
+2. Import pipelines from repository
+3. Configure linked services
+4. Trigger pipeline manually or via schedule
+
+
+
+
+
+
+
 
 
 
