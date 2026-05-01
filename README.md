@@ -4,6 +4,18 @@
 
 
 
+
+## Project Structure
+
+├── adf/                # ADF pipelines (JSON)
+├── databricks/         # Notebooks for transformation
+├── synapse/            # SQL scripts
+├── logicapp/           # Workflow automation
+├── images/             # Diagrams and screenshots
+└── README.md
+
+
+
 # Azure Data Engineering Project
 
 ## Overview
