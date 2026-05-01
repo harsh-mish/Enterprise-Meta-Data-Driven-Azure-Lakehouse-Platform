@@ -99,7 +99,11 @@ This ensures quick debugging and operational stability.
 
 ## Implementation Screenshots
 
+
+
 ### Azure Data Factory Pipeline
+
+
 <img width="1000" height="500" alt="Screenshot 2026-03-22 135338" src="https://github.com/user-attachments/assets/b0179ac0-8dec-4c09-ab7f-0524854ee1a4" />
 
 
@@ -107,6 +111,8 @@ This ensures quick debugging and operational stability.
 
 
 ### Databricks Transformation
+
+
 <img width="1000" height="500" alt="Screenshot 2026-03-22 201853" src="https://github.com/user-attachments/assets/b8563f21-4a87-4a2d-90b4-2636c6ee2411" />
 
 
@@ -114,6 +120,8 @@ This ensures quick debugging and operational stability.
 
 
 ### Synapse Analytics
+
+
 <img width="1000" height="500" alt="Screenshot 2026-03-22 134749" src="https://github.com/user-attachments/assets/4942e95b-b0c8-4560-90e5-c673f041a7b5" />
 
 
@@ -121,6 +129,8 @@ This ensures quick debugging and operational stability.
 
 
 ### Logic App Workflow
+
+
 <img width="1000" height="500" alt="Screenshot 2026-03-22 135526" src="https://github.com/user-attachments/assets/538cc6b8-c0ea-4d5e-b2ef-a113483cc579" />
 
 
