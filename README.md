@@ -101,6 +101,48 @@ This ensures quick debugging and operational stability.
 
 
 
+
+
+## ADF Pipeline: Incremental Data Ingestion
+
+This pipeline is designed to perform incremental data loading using CDC (Change Data Capture) logic instead of full data loads.
+
+### Workflow
+
+1. **Lookup Activity (last_cdc)**
+   - Fetches the last processed timestamp (CDC value) from the target or metadata table.
+   - This ensures only new or updated data is processed.
+
+2. **Set Variable**
+   - Stores the last CDC value into a pipeline variable.
+   - This value is reused in downstream activities.
+
+3. **Copy Data Activity (AzureSQLToLake)**
+   - Loads only incremental data based on the CDC column.
+   - Uses dynamic query filtering (e.g., WHERE last_updated > last_cdc).
+
+4. **If Condition (ifIncrementalData)**
+   - Checks whether new data is available.
+   
+   **If TRUE:**
+   - Executes further activities like:
+     - Fetching max CDC value (max_cdc)
+     - Updating metadata (update_last_cdc)
+
+   **If FALSE:**
+   - Pipeline skips processing to avoid unnecessary execution.
+
+### Key Features
+
+- Incremental load (avoids full refresh)
+- Improved performance and reduced cost
+- Dynamic parameterization (schema, table, cdc_col, from_date)
+- Conditional execution using If Activity
+- Metadata-driven pipeline design
+
+
+
+
 ### Azure Data Factory Pipeline
 
 
