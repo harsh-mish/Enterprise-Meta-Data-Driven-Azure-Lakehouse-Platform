@@ -36,6 +36,11 @@ Overall, this setup follows industry-standard CI/CD practices, improving reliabi
 
 
 
+<img width="1536" height="1024" alt="gir_intigration" src="https://github.com/user-attachments/assets/cb756a84-c95a-44cc-bb11-553ddf0ec81f" />
+
+
+
+
 ## Workflow
 
 1. Data is ingested from source systems using Azure Data Factory pipelines.
