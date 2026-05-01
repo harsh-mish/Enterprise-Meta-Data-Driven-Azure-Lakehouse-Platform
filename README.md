@@ -181,6 +181,45 @@ This pipeline is designed to perform incremental data loading using CDC (Change 
 
 
 
+## Logic App Workflow
+
+Azure Logic Apps is used in this project to automate and monitor the data pipeline execution.
+
+### Workflow Explanation
+
+1. **Trigger**
+   - The workflow starts using a trigger (e.g., scheduled trigger or event-based trigger).
+   - This ensures the pipeline runs automatically without manual intervention.
+
+2. **ADF Pipeline Execution**
+   - Logic App calls the Azure Data Factory pipeline using a REST API or connector.
+   - It initiates the data ingestion and transformation process.
+
+3. **Monitoring Status**
+   - Logic App continuously checks the pipeline run status (Success/Failure).
+   - This helps in tracking execution in near real-time.
+
+4. **Conditional Logic**
+   - Based on pipeline result:
+     - If **Success** → proceed with success notification
+     - If **Failure** → trigger error handling workflow
+
+5. **Notification System**
+   - Sends alerts via email (or other services)
+   - Notifies users about:
+     - Successful execution
+     - Failed pipeline runs
+
+### Key Benefits
+
+- Automated pipeline triggering
+- Real-time monitoring
+- Alerting and notification system
+- Reduced manual effort
+
+
+
+
 
 ### Logic App Workflow
 
