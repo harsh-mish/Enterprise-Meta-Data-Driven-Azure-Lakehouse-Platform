@@ -43,12 +43,49 @@ Overall, this setup follows industry-standard CI/CD practices, improving reliabi
 
 
 
+
 ## Workflow
 
-1. Data is ingested from source systems using Azure Data Factory pipelines.
-2. The ingested data is processed and transformed using Azure Databricks notebooks.
-3. Transformed data is stored in Azure Synapse Analytics for reporting and analysis.
-4. Azure Logic Apps is used to trigger alerts/notifications based on pipeline execution status.
+The project implements a complete end-to-end data pipeline with multiple stages:
+
+### 1. Data Ingestion (Azure Data Factory)
+Data is ingested from multiple sources such as SQL databases, CSV files, and REST APIs using Azure Data Factory pipelines.  
+ADF handles:
+- Copy activities for data movement  
+- Incremental data loading  
+- Basic validation and error handling  
+The ingested data is stored in the raw (landing) zone of Azure Data Lake Storage.
+
+### 2. Data Processing (Azure Databricks)
+The raw data is processed and transformed using Azure Databricks notebooks.  
+Transformations include:
+- Data cleaning (handling nulls, duplicates)  
+- Data transformation and formatting  
+- Business logic implementation  
+- Aggregations and enrichment  
+The processed data is then stored in the curated layer of the data lake.
+
+### 3. Data Storage & Analytics (Azure Synapse Analytics)
+The transformed data is loaded into Azure Synapse Analytics for analytical processing.  
+This includes:
+- Loading into dedicated or serverless SQL pools  
+- Running SQL queries for analysis  
+- Preparing datasets for reporting and BI tools  
+
+### 4. Automation & Orchestration (Azure Logic Apps)
+Azure Logic Apps is used to automate workflow execution and monitoring.  
+It performs:
+- Scheduled or event-based triggers  
+- Monitoring pipeline execution status  
+- Sending email notifications on success/failure  
+
+### 5. Monitoring & Logging
+The entire pipeline is monitored to ensure reliability:
+- Pipeline run monitoring in ADF  
+- Logging and error tracking  
+- Alerting mechanisms for failures  
+This ensures quick debugging and operational stability.
+
 
 
 
