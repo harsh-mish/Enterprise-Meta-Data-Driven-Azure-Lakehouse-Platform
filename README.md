@@ -4,6 +4,19 @@
 
 
 
+# Azure Data Engineering Project
+
+## Overview
+This project demonstrates an end-to-end data pipeline built using Azure services. The pipeline automates data ingestion, transformation, storage, and monitoring.
+
+Technologies used:
+- Azure Data Factory
+- Azure Databricks
+- Azure Synapse Analytics
+- Azure Logic Apps
+
+
+
 
 ## Git Integration in ADF
 
@@ -20,6 +33,15 @@ This approach ensures:
 - Better collaboration in team environments
 
 Overall, this setup follows industry-standard CI/CD practices, improving reliability, traceability, and maintainability of data pipelines.
+
+
+
+## Workflow
+
+1. Data is ingested from source systems using Azure Data Factory pipelines.
+2. The ingested data is processed and transformed using Azure Databricks notebooks.
+3. Transformed data is stored in Azure Synapse Analytics for reporting and analysis.
+4. Azure Logic Apps is used to trigger alerts/notifications based on pipeline execution status.
 
 
 
