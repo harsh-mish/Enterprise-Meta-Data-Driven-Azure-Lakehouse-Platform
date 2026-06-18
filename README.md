@@ -1,4 +1,4 @@
-# Azure Data Engineering Project
+# Enterprise Meta Data Driven Azure Lakehouse Platform
 
 <img width="1000" height="500" alt="Architecture" src="https://github.com/user-attachments/assets/3d614eb9-eebf-4594-af8e-8b194477107f" />
 
